@@ -1,12 +1,13 @@
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	clear()
 }
 
 function draw() {
 		
 		clear()
 		for(i=0;i<3;i++){
-		stroke(0)
+		stroke(255)
 		line(mouseX, mouseY, mouseX+random(-20*PI,20*PI), mouseY+random(-20*PI,20*PI));
 		line(mouseX, mouseY, mouseX+random(-50*PI,50*PI), mouseY+random(-50*PI,50*PI));
 		}
@@ -23,6 +24,6 @@ function draw() {
 		for(i=0;i<360;i++){
 		rotate(2)
 		circle(mouseX*noise(0.005 * frameCount-10), mouseY*noise(0.005 * frameCount-10),random(3))
-		}	
+		}		
 	
 }
